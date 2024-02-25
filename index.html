@@ -19,7 +19,7 @@
        .center
        {
             height: 80vh;
-            background-color: white;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%,rgb(249, 243, 194)17.8%,rgb(184, 180, 242)100.2%);
             opacity: 0.7;
             transform: translate(-50%, -50%);
             position: absolute;
@@ -27,6 +27,7 @@
             left: 50%;
             border: 3px solid rgb(234, 239, 242);
             border-radius: 5%; 
+            border: 4px solid aliceblue;
 
        }
        .center img{
@@ -62,17 +63,36 @@
        {
         width: 80px;
         height: 35px;
-        background-color: rgb(50, 50, 237);
+        background-image: radial-gradient(circle farthest-corner at 10% 20%,rgb(44, 14, 209)17.8%,rgb(234, 211, 7)100.2%);
         color: white;
         border: none;
         outline: none;
-
+        border-radius: 10%;
+        transform:0.1s;
        }
        button:hover
        {
         background-color: rgb(25, 25, 217);
         border-radius: 10%;
        }
+       button::after{
+        content: ' ';
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%,rgb(249, 243, 194)17.8%,rgb(184, 180, 242)100.2%);
+        filter: blur(15px);
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+       }
+       button:active{
+        transform: scale(0.9)rotate(0deg);
+        background: radial-gradient(circle farthest-corner at 10% 20%,rgb(225, 185, 7)17.8%,rgb(9, 12, 196)100.2%);
+        transform: 0.5s;
+        
+       }
+
     </style>
 </head>
 <body>
