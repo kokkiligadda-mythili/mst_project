@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%,rgb(44, 14, 209)17.8%,rgb(234, 211, 7)100.2%);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f1f1f6;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    
+    .sidenav a:hover {
+        color: #e6db08;
+    }
+    
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #main {
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle farthest-corner at 15% 15%,rgb(243, 246, 78)7.8%,rgb(89, 78, 232)100.2%);
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+    }
+
+    h1
+    {
+        opacity: 0.8;
+        border-radius: 5%;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 400px;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%,rgb(107, 88, 212)17.8%,rgb(186, 186, 127)100.2%);
+    }
+   
+    .threelines
+    {
+        width: 30px;
+        height: 5px;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%,rgb(44, 14, 209)17.8%,rgb(234, 211, 7)100.2%);
+        margin: 6px 0;
+        
+    }
+    
+    </style>
+</head>
+<body>
+   
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+        <a href="#">Bus-A</a>
+    </div>
+    
+  
+    <span onclick="openNav()"><div class="threelines"></div>
+        <div class="threelines"></div>
+        <div class="threelines"></div></span>
+    
+
+    <div id="main">
+           <h1 align="center">Know Today Updates For Your Bus...<br>
+            <font align="center" size="5px" >Click On Three Horizental Lines</font></h1>
+           
+    </div>
+    
+ 
+   
+   <script>
+    // Set the width of the side navigation to 250px
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    // Set the width of the side navigation to 0
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </Script>
+</body>
+</html>
